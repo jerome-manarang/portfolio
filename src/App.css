@@ -2,17 +2,50 @@
   text-align: center;
 }
 
-body{
-  background-color: rgb(124, 147, 192);
-
+body {
+  background-color: rgb(56, 67, 89);
 }
 
-h1{
- margin:0;
+h1 {
+  margin: 0;
 }
 
-/* src/components/StickyHeader.css */
-/* src/components/StickyHeader.css */
+.title {
+  height: 80vh; /* Maintain the overall height */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  font-size: 6vw; /* Responsive font size */
+  margin: 0;
+  color: white;
+}
+
+.subtitle {
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  font-size: 3vw;
+  margin-top: 10px; /* Space between the title and subtitle */
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 50px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 35px; /* Adjust font size for mobile devices */
+  }
+}
+
+/* Sticky header styles remain unchanged */
 .sticky-header {
   position: fixed;
   top: 0;
@@ -95,3 +128,29 @@ h1{
   visibility: visible;
 }
 
+
+.professional-experience{
+  background-color: white;
+  padding: 60px 20px 300px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.professional-experience h2{
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  font-size:4vw;
+  margin: 0;
+  padding-top: 0;
+}
+
+@media (max-width:768px){
+  .professional-experience h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width:480px){
+  .professional-experience h2{
+    font-size:28px;
+  }
+}

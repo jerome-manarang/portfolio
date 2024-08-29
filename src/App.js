@@ -38,11 +38,24 @@ const StickyHeader = () => {
   );
 };
 
-function Body(){
+function Main(){
   return(
-  <h1> Jerome Manarang</h1>
+  <div className ="title"> 
+  <h1>Jerome Manarang</h1>
+  <p className="subtitle">Software Developer</p>
+  </div>
   )
 }
+
+function Experience(){
+  return(
+  <section className="professional-experience">
+    <h2>Professional Experience</h2>
+  </section>
+  )
+}
+
+
 
 
 
@@ -50,6 +63,8 @@ function App() {
   return (
     <div>
       <StickyHeader />
+      <Main />
+      <Experience />
    </div>
   
   );
