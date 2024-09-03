@@ -11,7 +11,7 @@ h1 {
 }
 
 .title {
-  height: 80vh; /* Maintain the overall height */
+  height: 90vh; /* Maintain the overall height */
   margin: 0;
   display: flex;
   justify-content: center;
@@ -130,6 +130,7 @@ h1 {
 
 
 .professional-experience{
+  height: 300vh;
   background-color: white;
   padding: 60px 20px 300px;
   text-align: center;
@@ -154,3 +155,80 @@ h1 {
     font-size:28px;
   }
 }
+
+
+
+.experience-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-top: 40px;
+
+}
+
+.experience-box{
+  width: 30%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.experience-box img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.experience-box h3{
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  font-size: 2vw;
+  margin-top: 20px;
+  color: #333;
+}
+
+
+.experience-box p{
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  font-size: 1.2vw;
+  margin-top: 10px;
+  color: #666;
+  flex-grow: 1l
+}
+
+@media (max-width: 768px) {
+  .experience-box h3 {
+    font-size: 24px;
+  }
+
+  .experience-box p {
+    font-size: 16px;
+  }
+
+  .experience-container {
+    flex-direction: column;
+  }
+
+  .experience-box {
+    width: 80%;
+
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-box h3 {
+    font-size: 20px;
+  }
+
+  .experience-box p {
+    font-size: 14px;
+  }
+}
+
+

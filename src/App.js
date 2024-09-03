@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-
+import fusionImage from './FUSION.png'
+import aiDebateImage from './AIDebater.png'
 import React, { useState } from 'react';
+
 
 
 const StickyHeader = () => {
@@ -42,7 +43,7 @@ function Main(){
   return(
   <div className ="title"> 
   <h1>Jerome Manarang</h1>
-  <p className="subtitle">Software Developer</p>
+  <p className="subtitle">Software Developer based in Irvine, CA</p>
   </div>
   )
 }
@@ -51,8 +52,26 @@ function Experience(){
   return(
   <section className="professional-experience">
     <h2>Professional Experience</h2>
+    <div className="experience-container">
+      <div className="experience-box">
+        <img src={fusionImage} alt="Experience 1"/>
+        <h3>FUSION ICS Project Director</h3>
+        <p>As one of the ICS Project Directors for FUSION, I am in charge of the computer science field within our organization. Within my position, I am responsible for leading the FUSION ICS Project, which is a two-month hackathon-style competition where teams compete to complete a web application that encompasses the pillars of our organization. In doing so, I am in charge of creating applications/guides for members of FUSION, creating a curriculum for beginners that teaches them web application basics, and being a leader and advisor for those who join the competition.</p>
+      </div>
+      <div className="experience-box">
+        <img src={aiDebateImage} alt="Experience 2"/>
+        <h3>AI Debater</h3>
+        <p>
+This was a personal project of mine which allows a user to debate any topic against AI. I made this due to my own lack of debate skills, and felt that this would allow me and any one who uses it proper practice for any debates they may encounter. This was designed in a way for a user to choose who their opponent is. 
+</p>
+      </div>
+      <div className="experience-box">
+        <img src={fusionImage} alt="Experience 3"/>
+        <h3>Search Engine</h3>
+      </div>
+    </div>
   </section>
-  )
+  );
 }
 
 
