@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  background-color: rgb(83, 113, 171);
+
 }
 
 body {
-  background-color: rgb(56, 67, 89);
+  background-color: rgb(83, 113, 171);
 }
 
 h1 {
@@ -11,26 +13,149 @@ h1 {
 }
 
 .title {
-  height: 90vh; /* Maintain the overall height */
+  height: 90vh;
   margin: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative; /* Enables absolute positioning for clouds */
+  overflow: hidden; /* Keeps clouds contained within the viewport */
+  padding: 90px;
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Place clouds behind text */
+  pointer-events: none; /* Prevent interaction with clouds */
+}
+
+.cloud {
+  position: absolute;
+  opacity: 0.7; /* Slight transparency */
+  animation: float 30s linear infinite; /* Smooth infinite animation */
+  pointer-events: auto; /* Allow interaction with the cloud */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth hover transition */
+}
+
+.cloud:hover {
+  transform: scale(1.2) translateY(-10px); /* Slight zoom and upward movement on hover */
+  animation-play-state: paused; /* Pause the animation */
+  opacity: 1; /* Make the cloud more visible on hover */
+}
+
+/* Original clouds moving from left to right */
+.cloud1 {
+  top: 10%; /* Cloud starts near the top */
+  left: -20%; /* Start off-screen */
+  width: 15vw;
+  animation-duration: 35s;
+}
+
+.cloud2 {
+  top: 50%; /* Middle of the screen */
+  left: -30%; /* Start off-screen */
+  width: 20vw;
+  animation-duration: 40s;
+}
+
+.cloud3 {
+  top: 70%; /* Lower part of the screen */
+  left: -25%; /* Start off-screen */
+  width: 25vw;
+  animation-duration: 45s;
+}
+
+.cloud4 {
+  top: 20%; /* Near the top */
+  left: -30%; /* Start off-screen */
+  width: 18vw;
+  animation-duration: 38s;
+}
+
+/* New clouds moving from right to left */
+.cloud5 {
+  top: 15%; /* Cloud starts near the top */
+  left: 120%; /* Start off-screen on the right */
+  width: 14vw;
+  animation: floatReverse 36s linear infinite;
+}
+
+.cloud6 {
+  top: 35%; /* Middle of the screen */
+  left: 130%; /* Start off-screen on the right */
+  width: 19vw;
+  animation: floatReverse 42s linear infinite;
+}
+
+.cloud7 {
+  top: 65%; /* Lower part of the screen */
+  left: 125%; /* Start off-screen on the right */
+  width: 22vw;
+  animation: floatReverse 50s linear infinite;
+}
+
+.cloud8 {
+  top: 25%; /* Near the top */
+  left: 130%; /* Start off-screen on the right */
+  width: 17vw;
+  animation: floatReverse 37s linear infinite;
+}
+
+/* Animation for left-to-right clouds */
+@keyframes float {
+  0% {
+    transform: translateX(0); /* Start at initial position */
+    opacity: 0; /* Initially hidden */
+  }
+  10% {
+    opacity: 0.7; /* Fade in */
+  }
+  90% {
+    opacity: 0.7; /* Stay visible */
+  }
+  100% {
+    transform: translateX(120vw); /* Move fully across the screen */
+    opacity: 0; /* Fade out at the end */
+  }
+}
+
+/* Animation for right-to-left clouds */
+@keyframes floatReverse {
+  0% {
+    transform: translateX(0); /* Start at initial position */
+    opacity: 0; /* Initially hidden */
+  }
+  10% {
+    opacity: 0.7; /* Fade in */
+  }
+  90% {
+    opacity: 0.7; /* Stay visible */
+  }
+  100% {
+    transform: translateX(-120vw); /* Move fully across the screen */
+    opacity: 0; /* Fade out at the end */
+  }
 }
 
 .title h1 {
   font-family: "Trebuchet MS", Tahoma, sans-serif;
-  font-size: 6vw; /* Responsive font size */
+  font-size: 6vw;
   margin: 0;
   color: white;
+  z-index: 2; /* Ensure text stays above clouds */
 }
 
 .subtitle {
   font-family: "Trebuchet MS", Tahoma, sans-serif;
   font-size: 3vw;
-  margin-top: 10px; /* Space between the title and subtitle */
+  margin-top: 10px;
   color: #ccc;
+  z-index: 2; /* Ensure text stays above clouds */
 }
 
 @media (max-width: 768px) {
@@ -127,108 +252,4 @@ h1 {
   opacity: 1;
   visibility: visible;
 }
-
-
-.professional-experience{
-  height: 300vh;
-  background-color: white;
-  padding: 60px 20px 300px;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.professional-experience h2{
-  font-family: "Trebuchet MS", Tahoma, sans-serif;
-  font-size:4vw;
-  margin: 0;
-  padding-top: 0;
-}
-
-@media (max-width:768px){
-  .professional-experience h2 {
-    font-size: 35px;
-  }
-}
-
-@media (max-width:480px){
-  .professional-experience h2{
-    font-size:28px;
-  }
-}
-
-
-
-.experience-container{
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  margin-top: 40px;
-
-}
-
-.experience-box{
-  width: 30%;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.experience-box img{
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.experience-box h3{
-  font-family: "Trebuchet MS", Tahoma, sans-serif;
-  font-size: 2vw;
-  margin-top: 20px;
-  color: #333;
-}
-
-
-.experience-box p{
-  font-family: "Trebuchet MS", Tahoma, sans-serif;
-  font-size: 1.2vw;
-  margin-top: 10px;
-  color: #666;
-  flex-grow: 1l
-}
-
-@media (max-width: 768px) {
-  .experience-box h3 {
-    font-size: 24px;
-  }
-
-  .experience-box p {
-    font-size: 16px;
-  }
-
-  .experience-container {
-    flex-direction: column;
-  }
-
-  .experience-box {
-    width: 80%;
-
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .experience-box h3 {
-    font-size: 20px;
-  }
-
-  .experience-box p {
-    font-size: 14px;
-  }
-}
-
 

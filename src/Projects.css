@@ -1,0 +1,80 @@
+
+.projects-container {
+  display: flex;
+  justify-content: center; /* Center the clouds horizontally */
+  align-items: center; /* Align clouds vertically */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Space between clouds */
+  padding: 10px 20px;
+  margin-top: -60px; /* Pull the clouds closer to the title */
+  background-color: rgb(83, 113, 171); /* Match the main theme */
+  height: auto; /* Allow container height to adjust dynamically */
+  min-height: 100vh; /* Ensures a minimum height of the viewport */
+}
+
+.cloud-project {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  clip-path: polygon(
+    50% 0%, 60% 5%, 75% 15%, 85% 30%, 88% 50%, 85% 70%, 75% 85%, 60% 95%, 
+    50% 100%, 40% 95%, 25% 85%, 15% 70%, 12% 50%, 15% 30%, 25% 15%, 40% 5%
+  ); /* Slightly reduced top and bottom */
+  -webkit-clip-path: polygon(
+    50% 0%, 60% 5%, 75% 15%, 85% 30%, 88% 50%, 85% 70%, 75% 85%, 60% 95%, 
+    50% 100%, 40% 95%, 25% 85%, 15% 70%, 12% 50%, 15% 30%, 25% 15%, 40% 5%
+  );
+}
+
+
+.cloud-project:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cloud-image {
+  width: 45vw; /* Ensure consistent size */
+  max-width: 500px;
+  height: auto;
+  pointer-events: none; /* Prevent image from interfering with click */
+}
+
+.cloud-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  pointer-events: none; /* Prevent content from blocking click */
+}
+.projects-title {
+  padding: 20px; /* Reduced padding */
+  font-size: 70px; /* Larger, more prominent size */
+  font-family: 'Poppins', sans-serif; /* Clean, modern font */
+  font-weight: bold;
+  background: linear-gradient(90deg, #02519b, #a0c6c5); /* Gradient color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Keep gradient color */
+  -webkit-text-stroke: 2px #000000; /* Add white border */
+  text-transform: uppercase; /* Capitalized text for emphasis */
+  text-align: center;
+  letter-spacing: 2px; /* Spacing between letters */
+  margin-bottom: 0; /* Remove extra margin below title */
+  animation: fadeInTitle 1.5s ease; /* Smooth fade-in animation */
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
