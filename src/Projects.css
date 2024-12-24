@@ -21,14 +21,15 @@
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   clip-path: polygon(
-    50% 0%, 60% 5%, 75% 15%, 85% 30%, 88% 50%, 85% 70%, 75% 85%, 60% 95%, 
-    50% 100%, 40% 95%, 25% 85%, 15% 70%, 12% 50%, 15% 30%, 25% 15%, 40% 5%
-  ); /* Slightly reduced top and bottom */
+    50% 0%, 65% 0%, 80% 10%, 90% 25%, 92% 50%, 90% 75%, 80% 90%, 65% 100%, 
+    50% 100%, 35% 100%, 20% 90%, 10% 75%, 8% 50%, 10% 25%, 20% 10%, 35% 0%
+  );
   -webkit-clip-path: polygon(
-    50% 0%, 60% 5%, 75% 15%, 85% 30%, 88% 50%, 85% 70%, 75% 85%, 60% 95%, 
-    50% 100%, 40% 95%, 25% 85%, 15% 70%, 12% 50%, 15% 30%, 25% 15%, 40% 5%
+    50% 0%, 65% 0%, 80% 10%, 90% 25%, 92% 50%, 90% 75%, 80% 90%, 65% 100%, 
+    50% 100%, 35% 100%, 20% 90%, 10% 75%, 8% 50%, 10% 25%, 20% 10%, 35% 0%
   );
 }
+
 
 
 .cloud-project:hover {
@@ -42,7 +43,6 @@
   height: auto;
   pointer-events: none; /* Prevent image from interfering with click */
 }
-
 .cloud-content {
   position: absolute;
   top: 50%;
@@ -50,8 +50,20 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
-  pointer-events: none; /* Prevent content from blocking click */
+  pointer-events: none;
 }
+
+.cloud-content h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.cloud-content p {
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
 .projects-title {
   padding: 20px; /* Reduced padding */
   font-size: 70px; /* Larger, more prominent size */
