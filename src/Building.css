@@ -34,7 +34,7 @@
     }
   }
   
-  /* Additional responsive styles */
+ 
   @media (max-width: 768px) {
     .buildings-section {
       height: 70vh; /* Adjust height for smaller screens */

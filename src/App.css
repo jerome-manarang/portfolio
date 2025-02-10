@@ -251,3 +251,17 @@ h1 {
   opacity: 1;
   visibility: visible;
 }
+
+.animation-container {
+  position: fixed;  /* Stays at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100vw; /* Full width */
+  height: 60vh; /* Adjust height for larger animation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: transparent; /* Keep it clean */
+  z-index: -1; /* Push behind content */
+}

@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 import "../Projects.css"
 import AOS from "aos";
-import cloudImage from "../cloud-removebg-preview.png";
+import cloudImage from "../images/cloud-removebg-preview.png";
 
 function Projects() {
   useEffect(() => {

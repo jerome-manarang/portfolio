@@ -1,22 +1,29 @@
 import './App.css';
 import React from 'react';
-import cloudImage from './cloud-removebg-preview.png';
+import cloudImage from './images/cloud-removebg-preview.png';
+import reactImage from './images/ReactCloud-removebg-preview.png';
+import pythonImage from './images/PythonCloud-removebg-preview.png';
+import javascriptImage from './images/JCloud-removebg-preview.png';
+import mysqlImage from './images/mysqlCloud-removebg-preview.png';
+import bootstrapImage from './images/bootstrapCloud-removebg-preview.png';
+import cppImage from './images/cppCloud-removebg-preview.png';
 import StickyHeader from './components/StickyHeader.js';
 import Projects from './components/Projects.js';
-import Buildings from './components/Building.js';
+import Sunset from './components/Sunset.js';
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 function Main() {
   return (
     <div className="title">
       <div className="clouds">
-        <img src={cloudImage} alt="cloud" className="cloud cloud1" />
+        <img src={cppImage} alt="cloud" className="cloud cloud1" />
         
-        <img src={cloudImage} alt="cloud" className="cloud cloud3" />
-        <img src={cloudImage} alt="cloud" className="cloud cloud4" />
-        <img src={cloudImage} alt="cloud" className="cloud cloud5" />
+        <img src={mysqlImage} alt="cloud" className="cloud cloud3" />
+        <img src={reactImage} alt="cloud" className="cloud cloud4" />
+        <img src={bootstrapImage} alt="cloud" className="cloud cloud5" />
         
-        <img src={cloudImage} alt="cloud" className="cloud cloud7" />
-        <img src={cloudImage} alt="cloud" className="cloud cloud8" />
+        <img src={pythonImage} alt="cloud" className="cloud cloud7" />
+        <img src={javascriptImage} alt="cloud" className="cloud cloud8" />
       </div>
       <h1>Jerome Manarang</h1>
       <p className="subtitle">Software Developer based in Irvine, CA</p>
@@ -24,14 +31,34 @@ function Main() {
   );
 }
 
+
+
+const BottomLottie = () => {
+  return (
+    <div style={{ width: "200%", textAlign: "center", marginTop: "50px" }}>
+      <DotLottieReact
+        src="https://lottie.host/10aef773-20c2-451f-843f-6402239d162a/KS4WvVHAS3.lottie"
+        loop
+        autoplay
+        style={{ width: "300%", maxWidth: "1200px", height: "auto" }}
+      />
+    </div>
+  );
+};
+
+
+
+
 function App() {
   return (
     <div>
       <StickyHeader />
       <Main />
-      <Projects /> 
+      <Projects />
       
     </div>
+    
+ 
   );
 }
 

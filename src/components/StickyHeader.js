@@ -26,7 +26,7 @@ const StickyHeader = () => {
           <ul>
             <li><a href="https://linkedin.com/in/jerome-edward-pangan-manarang-422139265" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             <li><a href="https://github.com/jerome-manarang" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="mailto:your-email@example.com">Email</a></li>
+            <li><a href="jemanara@uci.edu">Email</a></li>
           </ul>
         </aside>
         <div className={`overlay ${sidebarOpen ? 'show' : ''}`} onClick={toggleSidebar}></div>
