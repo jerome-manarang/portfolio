@@ -6,7 +6,7 @@
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
   gap: 20px; /* Space between clouds */
   padding: 10px 20px;
-  margin-top: -60px; /* Pull the clouds closer to the title */
+  margin-top: -250px; /* Pull the clouds closer to the title */
   background-color: rgb(83, 113, 171); /* Match the main theme */
   height: auto; /* Allow container height to adjust dynamically */
   min-height: 100vh; /* Ensures a minimum height of the viewport */

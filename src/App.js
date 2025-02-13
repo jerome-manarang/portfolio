@@ -9,7 +9,7 @@ import bootstrapImage from './images/bootstrapCloud-removebg-preview.png';
 import cppImage from './images/cppCloud-removebg-preview.png';
 import StickyHeader from './components/StickyHeader.js';
 import Projects from './components/Projects.js';
-import Sunset from './components/Sunset.js';
+import Experience from './components/Experience.js';
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 function Main() {
@@ -48,13 +48,13 @@ const BottomLottie = () => {
 
 
 
-
 function App() {
   return (
     <div>
       <StickyHeader />
       <Main />
       <Projects />
+      
       
     </div>
     
