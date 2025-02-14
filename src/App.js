@@ -54,6 +54,7 @@ function App() {
       <StickyHeader />
       <Main />
       <Projects />
+      <Experience />
       
       
     </div>

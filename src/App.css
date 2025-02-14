@@ -22,7 +22,7 @@ h1 {
   position: relative; /* Enables absolute positioning for clouds */
   overflow: hidden; /* Keeps clouds contained within the viewport */
   padding: 20px; /* Adjust padding for better centering */
-  text-align: center; /* Ensure proper centering for smaller screens */
+  text-align: center; /* Ensureper centering for smaller screens */
 }
 
 .clouds {

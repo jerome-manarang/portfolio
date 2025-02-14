@@ -37,8 +37,15 @@
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.cloud-image {
+.cloud-image{
   width: 45vw; /* Ensure consistent size */
+  max-width: 500px;
+  height: auto;
+  pointer-events: none; /* Prevent image from interfering with click */
+}
+
+.cloud-image-exp{
+  width: 70vw; /* Ensure consistent size */
   max-width: 500px;
   height: auto;
   pointer-events: none; /* Prevent image from interfering with click */
