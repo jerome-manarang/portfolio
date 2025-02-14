@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center; /* Center the clouds horizontally */
   align-items: center; /* Align clouds vertically */
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  
   gap: 20px; /* Space between clouds */
   padding: 10px 20px;
   margin-top: -250px; /* Pull the clouds closer to the title */
