@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from 'react';
 import cloudImage from './images/cloud-removebg-preview.png';
 import reactImage from './images/ReactCloud-removebg-preview.png';
@@ -10,6 +11,7 @@ import cppImage from './images/cppCloud-removebg-preview.png';
 import StickyHeader from './components/StickyHeader.js';
 import Projects from './components/Projects.js';
 import Experience from './components/Experience.js';
+import ICSProjectDirector from './components/ICSProjectDirector.js';
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 function Main() {
@@ -50,16 +52,19 @@ const BottomLottie = () => {
 
 function App() {
   return (
-    <div>
+    <Router>
       <StickyHeader />
-      <Main />
-      <Projects />
-      <Experience />
-      
-      
-    </div>
-    
- 
+      <Routes>
+      <Route path="/" element={
+          <>
+            <Main />
+            <Projects />
+            <Experience />
+          </>
+        } />
+        <Route path="/ICSProjectDirector" element={<ICSProjectDirector />} />
+      </Routes>
+    </Router>
   );
 }
 
