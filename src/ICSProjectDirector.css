@@ -13,3 +13,16 @@
     padding: 100px;  
     text-align: center; 
 }
+
+.experience-title img {
+    width: auto; /* Adjust width as needed */
+    max-width: 45%; /* Ensure images don't overflow */
+    height: auto;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between images */
+    margin-top: 10px; /* Add spacing from text */
+  }
