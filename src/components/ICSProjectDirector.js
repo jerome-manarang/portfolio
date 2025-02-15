@@ -1,11 +1,17 @@
 import React from "react";
+import '../ICSProjectDirector.css';
+import { motion } from "framer-motion";
 
 function ICSProjectDirector() {
   return (
-    <div className="container text-center">
-      <h1>Welcome to the New Page!</h1>
-      <p>This is the page you navigated to when clicking the cloud.</p>
-    </div>
+    <motion.div 
+      className="experience-title"
+      initial={{ opacity: 0, y: -50 }}  // Start hidden and moved up
+      animate={{ opacity: 1, y: 0 }}    // Fade in and move down
+      transition={{ duration: 1.5, ease: "easeOut" }} // Smooth transition
+    >
+      <h1>Information and Computer Science Project Director</h1>
+    </motion.div>
   );
 }
 
