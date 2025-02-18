@@ -45,6 +45,12 @@ function ICSProjectDirector() {
           skilled, and increasing engagement in Computer Science within their
           organization.
         </p>
+        <h1>
+          Collaborations: Filipino Googler's Network
+          <h1> Within this collaboration, software engineers from Google assisted Jerome Manarang in reviewing 
+            project proposals and SRS documents from teams. 
+          </h1>
+        </h1>
       </motion.div>
     </div>
   );
