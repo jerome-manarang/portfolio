@@ -12,6 +12,7 @@ import StickyHeader from './components/StickyHeader.js';
 import Projects from './components/Projects.js';
 import Experience from './components/Experience.js';
 import ICSProjectDirector from './components/ICSProjectDirector.js';
+import Kapwa from './components/Kapwa';
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 function Main() {
@@ -63,6 +64,8 @@ function App() {
           </>
         } />
         <Route path="/ICSProjectDirector" element={<ICSProjectDirector />} />
+        <Route path="/Kapwa" element={<Kapwa />} />
+
       </Routes>
     </Router>
   );

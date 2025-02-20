@@ -20,6 +20,11 @@ function Experience() {
       title: "ICS Project Director",
       description: "Lead 5 teams developing a full-stack web application",
       route: "/ICSProjectDirector", // Internal route instead of an external link
+    },
+    {
+      title: "Google Mentorship",
+      description: "Mentee under software engineers at Google",
+      route: "/Kapwa", // Internal route instead of an external link
     }
   ];
 
