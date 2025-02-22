@@ -36,16 +36,11 @@ function Kapwa() {
         transition={{ duration: 1.5, ease: "easeOut" }} // Smooth transition
       >
         <p>
-          Alongside his co-director, Benson Manzano, Jerome Manarang created the
-          first-ever project with three goals: familiarizing beginners with
-          full-stack development, providing more experience for those already
-          skilled, and increasing engagement in Computer Science within their
-          organization.
+          Alongside his time as a mentee, he was able to recieve guidance and improvements on his projects such as "Ai Debator"
         </p>
         <h1>
           Collaborations: Filipino Googler's Network
-          <h1> Within this collaboration, software engineers from Google assisted Jerome Manarang in reviewing 
-            project proposals and SRS documents from teams. 
+          <h1> Jerome worked alongside his mentors in performing code reviews and proposal reviews to assist groups with understand how to approach their projects.
           </h1>
         </h1>
       </motion.div>
