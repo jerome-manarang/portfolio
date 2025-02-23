@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import "../ICSProjectDirector.css";
 import { motion, useInView } from "framer-motion";
-import fipcrew from "../images/FipCrew.JPG";
-import fipteams from "../images/FIPTeams.jpg";
+import kapwa from "../images/fgn.jpeg";
 
 function Kapwa() {
   // Reference for the description section
@@ -23,7 +22,10 @@ function Kapwa() {
           As a mentee, Jerome was mentored under software engineers from Google when developing projects. Alongside this,
           he also participated in code reviews under this position where he helped improve code cleanliness and functinality.
         </p>
-
+        <div className="image-container">
+          <img src={kapwa} alt="FGN" className="fgn-image-one" />
+    
+        </div>
 
       </motion.div>
 
