@@ -12,7 +12,7 @@ const StickyHeader = () => {
         <header className="sticky-header">
           <nav className="nav-bar">
             <div className="left">
-              <a href="/" className="home-link">Jerome Manarang</a>
+              <a href="/portfolio" className="home-link">Jerome Manarang</a>
             </div>
             <div className="right">
               <button className="connect-button" onClick={toggleSidebar}>

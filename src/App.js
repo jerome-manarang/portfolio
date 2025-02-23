@@ -53,10 +53,10 @@ const BottomLottie = () => {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <StickyHeader />
       <Routes>
-      <Route path="/" element={
+        <Route path="/" element={
           <>
             <Main />
             <Projects />
@@ -65,7 +65,6 @@ function App() {
         } />
         <Route path="/ICSProjectDirector" element={<ICSProjectDirector />} />
         <Route path="/Kapwa" element={<Kapwa />} />
-
       </Routes>
     </Router>
   );
