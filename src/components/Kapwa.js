@@ -37,13 +37,12 @@ function Kapwa() {
         animate={isDescriptionInView ? { opacity: 1, y: 0 } : {}} // Animate only when in view
         transition={{ duration: 1.5, ease: "easeOut" }} // Smooth transition
       >
-        <p>
-          Alongside his time as a mentee, he was able to recieve guidance and improvements on his projects such as "Ai Debator"
-        </p>
+        
         <h1>
           Collaborations: Filipino Googler's Network
-          <h1> Jerome worked alongside his mentors in performing code reviews and proposal reviews to assist groups with understand how to approach their projects.
-          </h1>
+          Jerome worked alongside his mentors in performing code reviews and proposal reviews to assist groups with understand how to approach their projects.
+        
+          Alongside his time as a mentee, he was able to recieve guidance and improvements on his projects such as "Ai Debator"
         </h1>
       </motion.div>
     </div>

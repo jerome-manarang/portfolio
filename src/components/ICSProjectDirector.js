@@ -38,18 +38,17 @@ function ICSProjectDirector() {
         animate={isDescriptionInView ? { opacity: 1, y: 0 } : {}} // Animate only when in view
         transition={{ duration: 1.5, ease: "easeOut" }} // Smooth transition
       >
-        <p>
+        <h1>
           Alongside his co-director, Benson Manzano, Jerome Manarang created the
           first-ever project with three goals: familiarizing beginners with
           full-stack development, providing more experience for those already
           skilled, and increasing engagement in Computer Science within their
           organization.
-        </p>
-        <h1>
+        
           Collaborations: Filipino Googler's Network
-          <h1> Within this collaboration, software engineers from Google assisted Jerome Manarang in reviewing 
+           Within this collaboration, software engineers from Google assisted Jerome Manarang in reviewing 
             project proposals and SRS documents from teams. 
-          </h1>
+          
         </h1>
       </motion.div>
     </div>
