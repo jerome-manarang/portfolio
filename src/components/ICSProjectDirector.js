@@ -3,6 +3,7 @@ import "../ICSProjectDirector.css";
 import { motion, useInView } from "framer-motion";
 import fipcrew from "../images/FipCrew.JPG";
 import fipteams from "../images/FIPTeams.jpg";
+import cloudImage from '../images/cloud-removebg-preview.png';
 
 function ICSProjectDirector() {
   // Reference for the description section
@@ -51,6 +52,16 @@ function ICSProjectDirector() {
           
         </h1>
       </motion.div>
+      <div className="clouds">
+        <img src={cloudImage} alt="cloud" className="cloud cloud1" />
+        
+        <img src={cloudImage} alt="cloud" className="cloud cloud3" />
+        <img src={cloudImage} alt="cloud" className="cloud cloud4" />
+        <img src={cloudImage} alt="cloud" className="cloud cloud5" />
+        
+        <img src={cloudImage} alt="cloud" className="cloud cloud7" />
+        <img src={cloudImage} alt="cloud" className="cloud cloud8" />
+      </div>
     </div>
   );
 }

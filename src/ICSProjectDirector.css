@@ -12,6 +12,7 @@
     padding: 20px; 
     padding: 100px;  
     text-align: center; 
+    z-index: 2; 
 }
 
 .experience-title img {
@@ -35,4 +36,63 @@
     gap: 10px; 
     margin-top: 40px; 
     color: white;
+  }
+
+  .clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    pointer-events: none; 
+  }
+  
+  .cloud {
+    position: absolute;
+    opacity: 0.7; 
+    animation: float 30s linear infinite; 
+    pointer-events: auto; 
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+  }
+  
+  .cloud:hover {
+    transform: scale(1.2) translateY(-10px); 
+    animation-play-state: paused; 
+    opacity: 1; 
+  }
+  
+  .cloud1 {
+    top: 10%;
+    left: -20%;
+    width: 15vw;
+    animation-duration: 35s;
+  }
+
+  .cloud4 {
+    top: 20%;
+    left: -30%;
+    width: 18vw;
+    animation-duration: 38s;
+  }
+  
+  .cloud5 {
+    top: 15%;
+    left: 120%;
+    width: 14vw;
+    animation: floatReverse 36s linear infinite;
+  }
+  
+  .cloud7 {
+    top: 65%;
+    left: 125%;
+    width: 22vw;
+    animation: floatReverse 50s linear infinite;
+  }
+  
+  .cloud8 {
+    top: 25%;
+    left: 130%;
+    width: 17vw;
+    animation: floatReverse 37s linear infinite;
   }
