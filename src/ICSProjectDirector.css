@@ -7,6 +7,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
     position: relative; 
     overflow: hidden;  
     padding: 20px; 
@@ -34,10 +35,14 @@
     align-items: center;
     text-align: center; 
     gap: 10px; 
-    margin-top: 40px; 
+    margin-top: 20px; 
     color: white;
     font-size: 10px;
-  }
+    max-width: 80%; 
+    margin: 0 auto;
+    
+}
+
 
   .clouds {
     position: absolute;

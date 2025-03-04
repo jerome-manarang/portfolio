@@ -43,7 +43,7 @@ function Kapwa() {
           Collaborations: Filipino Googler's Network
           Jerome worked alongside his mentors in performing code reviews and proposal reviews to assist groups with understand how to approach their projects.
         
-          Alongside his time as a mentee, he was able to recieve guidance and improvements on his projects such as "Ai Debator"
+          Alongside his time as a mentee, he was able to recieve guidance and improvements on his projects such as "AI Debater"
         </h1>
       </motion.div>
       <div className="clouds">
